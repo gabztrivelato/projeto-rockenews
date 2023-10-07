@@ -1,0 +1,121 @@
+:root{
+    --text-color: #fff;
+    --title-color: #08C05E;
+    --detail--color: #8257E5;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'League Spartan', 'Arial' , sans-serif; 
+}
+body{
+    background: #121214;
+    margin:0;
+    padding:0;
+    color: var(--text-color);
+}
+
+.bg-image{
+    background-image: url(../images/image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right:0;
+    z-index: -1;
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    display:block;
+    padding: 45px 0 97px 51px;
+}
+.text{
+    margin-bottom: 80px;
+    width: 647px;
+}
+.text h1{
+    font-family: 'Work Sans', 'Arial', sans-serif;
+    color: var(--title-color);
+    margin-bottom: 8px; 
+    font-size: 24px;
+    font-weight: 700; 
+}
+
+.text h2{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px; 
+}
+
+.content{
+    margin-left: 36px;
+}
+
+.form{
+    width: 798px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 52px;
+}
+.form p{
+    margin-bottom: 17px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input .input-text{
+    font-family: 'Work Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    flex-grow: 1;
+    background-color: #fff;
+    border: none;
+    border-left: 5px solid var(--title-color);
+    padding: 17px 0 17px 15px;
+
+    height: 48px;
+    outline: none;
+}
+
+.input-submit{
+    width: 48px;
+    height: 48px;
+    background: var(--detail--color) url(../images/send.png) no-repeat center;
+    padding: 16px;
+    border: none;
+
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.link a{
+    color: var(--detail--color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.link__icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
